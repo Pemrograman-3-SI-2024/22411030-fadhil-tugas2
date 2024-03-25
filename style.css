@@ -1,0 +1,78 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("../gambar/g1.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+    filter: blur(10px);
+}
+
+.content {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.content h2 {
+    color: #F9E2AF;
+    font-size: 95px;
+}
+
+.content p {
+    margin-top: 30px;
+    color:#FFFDD7;
+    font-size: 30px;
+}
+
+.rotate {
+    position: absolute;
+}
+
+.g2:hover{
+    transform: scale(1.05) rotate(270deg) translateX(-52%) translateY(35%);
+}
+
+.g3:hover{
+    transform: scale(1.05)  rotate(30deg) translateX(100%) translateY(-1%);
+}
+
+.g4:hover{
+    transform: scale(1.05) rotate(150deg) translateX(5%) translateY(-173%);
+}
+
+.img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 100px;
+    left: -50px;
+}
+
+.g2 {
+    transform: rotate(270deg) translateX(-52%) translateY(35%);
+    z-index: 3;
+    transition: .3s ease-in-out;
+}
+
+.g3 {
+    transform: rotate(30deg) translateX(100%) translateY(-1%);
+    z-index: 3;
+    transition: .3s ease-in-out;
+}
+
+.g4 {
+    transform: rotate(150deg) translateX(5%) translateY(-173%);
+    transition: .3s ease-in-out;
+}
